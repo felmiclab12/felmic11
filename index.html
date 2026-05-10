@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Felmic Laboratories - Complete diagnostic services, medical equipment, consumables, hospital furniture & orthopedics in Upperhill, Thika & Kileleshwa.">
+    <meta name="keywords" content="medical laboratory Nairobi, lab tests Kenya, medical equipment supplier, hospital beds Kenya, orthopedic devices, diagnostic center Thika">
+    <title>Felmic Laboratories | Lab Tests, Medical Supplies, Hospital Furniture | powered by llara Health</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #f5faff; color: #13294b; line-height: 1.5; scroll-behavior: smooth; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+        header { background: white; box-shadow: 0 4px 20px rgba(0,0,0,0.03); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #e6edf4; }
+        .header-flex { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 16px 0; gap: 20px; }
+        .logo-area { display: flex; align-items: center; gap: 14px; }
+        .logo-icon { background: linear-gradient(145deg, #0b3b5f, #0a2f4a); width: 56px; height: 56px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 28px; color: white; }
+        .logo-text h1 { font-size: 1.7rem; font-weight: 800; background: linear-gradient(135deg, #0c4e6e, #1f6e96); background-clip: text; -webkit-background-clip: text; color: transparent; }
+        .logo-text .tag { font-size: 0.75rem; color: #5f7f9c; }
+        .powered-badge { background: #eef3fc; padding: 8px 20px; border-radius: 40px; font-size: 0.85rem; font-weight: 600; color: #1a5d7e; display: flex; align-items: center; gap: 10px; border: 1px solid #dae9f5; }
+        nav ul { display: flex; gap: 28px; list-style: none; }
+        nav a { text-decoration: none; font-weight: 600; color: #1e4c6e; transition: 0.2s; }
+        nav a:hover { color: #0088cc; }
+        .hero { background: linear-gradient(105deg, #eef5fc 0%, #ffffff 70%); padding: 56px 0 48px; border-bottom: 1px solid #e2edf7; }
+        .hero-grid { display: flex; flex-wrap: wrap; gap: 48px; align-items: center; justify-content: space-between; }
+        .hero-content { flex: 1; }
+        .hero-content h2 { font-size: 2.8rem; font-weight: 800; color: #083452; line-height: 1.2; margin-bottom: 20px; }
+        .hero-stats { display: flex; gap: 28px; margin: 24px 0 20px; flex-wrap: wrap; }
+        .stat-box { background: white; border-radius: 28px; padding: 12px 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.02); border: 1px solid #e2edf7; }
+        .stat-number { font-size: 1.8rem; font-weight: 800; color: #0f6b8f; line-height: 1; }
+        .cta-button { display: inline-block; background: #0b3b5f; color: white; padding: 14px 32px; border-radius: 40px; text-decoration: none; font-weight: 600; margin-top: 24px; transition: 0.2s; }
+        .cta-button:hover { background: #1f6392; transform: translateY(-2px); }
+        .pill-group { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+        .pill { background: white; border-radius: 60px; padding: 8px 20px; font-weight: 500; font-size: 0.85rem; border: 1px solid #cde0ed; color: #1f6392; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; margin: 60px 0 40px; }
+        .service-card { background: white; border-radius: 28px; padding: 28px 24px; border: 1px solid #e8f0f8; }
+        .service-card i { font-size: 2.5rem; color: #0f6b8f; margin-bottom: 20px; }
+        .service-card h3 { font-size: 1.35rem; margin-bottom: 12px; font-weight: 700; color: #0e3a57; }
+        .popular-tests { background: white; border-radius: 32px; padding: 32px; margin: 40px 0; border: 1px solid #e6edf4; }
+        .test-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
+        .test-item { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #eef2f8; }
+        .testimonials { background: #eef3fc; border-radius: 32px; padding: 40px; margin: 40px 0; text-align: center; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 28px; }
+        .testimonial-card { background: white; border-radius: 24px; padding: 24px; text-align: left; }
+        .stars { color: #f5b042; margin-bottom: 12px; }
+        .search-section { padding: 48px 0 32px; background: white; border-radius: 40px 40px 0 0; margin-top: 20px; }
+        .section-title { font-size: 2rem; font-weight: 700; margin-bottom: 8px; color: #083452; }
+        .section-sub { color: #527a9b; margin-bottom: 32px; font-weight: 400; }
+        .search-tabs { display: flex; gap: 12px; margin-bottom: 32px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; flex-wrap: wrap; }
+        .tab-btn { background: none; border: none; font-weight: 600; padding: 8px 24px; border-radius: 40px; cursor: pointer; color: #4a6f8e; }
+        .tab-btn.active { background: #0b3b5f; color: white; }
+        .search-bar { margin-bottom: 36px; }
+        .search-bar input { width: 100%; padding: 14px 24px; border: 1px solid #cbdde9; border-radius: 60px; font-size: 1rem; }
+        .search-bar input:focus { outline: none; border-color: #0b3b5f; }
+        .price-table-wrapper { overflow-x: auto; border-radius: 24px; background: white; box-shadow: 0 8px 24px rgba(0,0,0,0.05); border: 1px solid #eef3fa; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        th { text-align: left; padding: 16px; background: #fafdff; font-weight: 700; color: #124263; border-bottom: 1px solid #e6edf4; }
+        td { padding: 12px 16px; border-bottom: 1px solid #f0f5fa; color: #1b3b55; }
+        tr:hover td { background-color: #fafcff; }
+        .price { font-weight: 700; color: #1a754c; white-space: nowrap; }
+        .tat { font-size: 0.75rem; color: #6f8eaa; white-space: nowrap; }
+        .no-results { text-align: center; padding: 48px; color: #7d9aba; }
+        .contact-strip { display: flex; flex-wrap: wrap; gap: 24px; margin: 48px 0 32px; justify-content: space-between; }
+        .contact-card { background: white; border-radius: 28px; padding: 24px; flex: 1; min-width: 220px; border: 1px solid #e6edf4; }
+        .contact-card i { font-size: 1.8rem; color: #0f6b8f; margin-bottom: 16px; }
+        .contact-card h4 { font-size: 1.2rem; margin-bottom: 12px; color: #0b3b5f; }
+        .hours { background: #eef3fc; border-radius: 28px; padding: 24px; margin: 20px 0; }
+        .map-container { border-radius: 24px; overflow: hidden; margin: 30px 0; height: 300px; background: #d9e6f2; }
+        .footer { background: #0a2f44; color: #cfe2f0; padding: 48px 0 24px; margin-top: 48px; }
+        .footer-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; }
+        .copyright { text-align: center; padding-top: 32px; font-size: 0.8rem; border-top: 1px solid #235b79; margin-top: 32px; }
+        .floating-buttons { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 12px; z-index: 999; }
+        .float-btn { width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.25); text-decoration: none; }
+        .float-btn:hover { transform: scale(1.05); }
+        .whatsapp { background: #25D366; }
+        .call { background: #0b3b5f; }
+        @media (max-width: 780px) { .hero-content h2 { font-size: 2rem; } .header-flex { flex-direction: column; align-items: flex-start; } nav ul { flex-wrap: wrap; gap: 18px; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-flex">
+        <div class="logo-area">
+            <div class="logo-icon">F</div>
+            <div class="logo-text">
+                <h1>FELMIC LABORATORY</h1>
+                <div class="tag">Diagnostics • Medical Equipment • Hospital Furniture</div>
+            </div>
+        </div>
+        <div class="powered-badge"><i class="fas fa-microchip"></i> powered by llara Health</div>
+        <nav><ul><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#pricelist">Price Search</a></li><li><a href="#contacts">Contact</a></li></ul></nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="container hero-grid">
+        <div class="hero-content">
+            <h2>Complete Lab Services, Medical Equipment & Hospital Furniture — One Trusted Partner</h2>
+            <p>High-quality diagnostic tests, medical consumables, surgical supplies, hospital beds, orthopedic devices, and equipment — serving 10,000+ patients across East Africa.</p>
+            <div class="hero-stats"><div class="stat-box"><div class="stat-number">10,000+</div><div>Patients Served</div></div><div class="stat-box"><div class="stat-number">3</div><div>Lab Hubs</div></div><div class="stat-box"><div class="stat-number">30min</div><div>Rapid Results</div></div></div>
+            <a href="#pricelist" class="cta-button"><i class="fas fa-search"></i> Browse Full Catalog</a>
+            <div class="pill-group"><span class="pill"><i class="fas fa-microscope"></i> Upperhill & Thika Hubs</span><span class="pill"><i class="fas fa-truck"></i> Cold Chain Logistics</span><span class="pill"><i class="fas fa-hospital"></i> Hospital Beds & Furniture</span></div>
+        </div>
+        <div class="hero-illustration"><i class="fas fa-chalkboard-user" style="font-size: 52px; color:#0c4e6e;"></i><p style="margin-top: 12px; font-weight:600;">Trusted by ABM Hospital,<br>Thika Dialysis & llara Health</p></div>
+    </div>
+</section>
+
+<div class="container" id="services"><div class="services-grid"><div class="service-card"><i class="fas fa-flask"></i><h3>Lab Test Referrals</h3><p>100+ tests including hormones, tumor markers, infectious diseases.</p></div><div class="service-card"><i class="fas fa-microscope"></i><h3>Lab Setup & Equipping</h3><p>Turnkey clinical labs, automation & high-end analyzers.</p></div><div class="service-card"><i class="fas fa-syringe"></i><h3>Reagents & Consumables</h3><p>High-grade supplies, rapid kits, dialysis consumables.</p></div><div class="service-card"><i class="fas fa-heartbeat"></i><h3>Medical Equipment</h3><p>Autoclaves, centrifuges, monitors, glucometers, and more.</p></div><div class="service-card"><i class="fas fa-bed"></i><h3>Hospital Furniture</h3><p>Hospital beds, delivery beds, examination tables, wheelchairs, walking aids.</p></div><div class="service-card"><i class="fas fa-boxes"></i><h3>Surgical Instruments</h3><p>Sutures, forceps, scalpels, gloves, catheters — complete surgical catalog.</p></div></div></div>
+
+<div class="container"><div class="popular-tests"><h3><i class="fas fa-chart-line"></i> Popular Lab Tests</h3><p>Most requested tests — affordable & fast turnaround</p><div class="test-grid"><div><div class="test-item"><span><strong>Complete Blood Count</strong><br><small>W.Blood</small></span><span class="price">KES 700<br><span class="tat">45 min</span></span></div><div class="test-item"><span><strong>Malaria Rapid Test</strong><br><small>W.Blood</small></span><span class="price">KES 300<br><span class="tat">30 min</span></span></div><div class="test-item"><span><strong>HIV Test</strong><br><small>Blood/Plasma</small></span><span class="price">KES 300<br><span class="tat">30 min</span></span></div></div><div><div class="test-item"><span><strong>Liver Function Test</strong><br><small>Serum</small></span><span class="price">KES 1,950<br><span class="tat">2 HRS</span></span></div><div class="test-item"><span><strong>Lipid Profile</strong><br><small>Serum</small></span><span class="price">KES 2,000<br><span class="tat">2 HRS</span></span></div><div class="test-item"><span><strong>Urine Culture</strong><br><small>Urine</small></span><span class="price">KES 2,100<br><span class="tat">3-5 days</span></span></div></div><div><div class="test-item"><span><strong>HbA1c</strong><br><small>W.Blood</small></span><span class="price">KES 2,000<br><span class="tat">1 HR</span></span></div><div class="test-item"><span><strong>Thyroid Function</strong><br><small>Serum</small></span><span class="price">KES 3,600<br><span class="tat">2 HRS</span></span></div><div class="test-item"><span><strong>COVID-19 PCR</strong><br><small>Swab</small></span><span class="price">KES 6,000<br><span class="tat">24 HRS</span></span></div></div></div></div></div>
+
+<div class="container"><div class="testimonials"><h3>What Our Clients Say</h3><div class="testimonial-grid"><div class="testimonial-card"><div class="stars">★★★★★</div><p>"Fast results and professional staff. They supplied our dialysis consumables on time."</p><p style="margin-top:12px; font-weight:600;">— Thika Dialysis Centre</p></div><div class="testimonial-card"><div class="stars">★★★★★</div><p>"Complete solution — from lab tests to hospital beds. Very reliable partner."</p><p style="margin-top:12px; font-weight:600;">— ABM Hospital</p></div><div class="testimonial-card"><div class="stars">★★★★★</div><p>"Wide range of tests, very affordable. Their Lab Manager is always helpful."</p><p style="margin-top:12px; font-weight:600;">— Patient, Upperhill</p></div></div></div></div>
+
+<section class="search-section" id="pricelist"><div class="container"><h2 class="section-title">📋 Complete Product & Price Catalog</h2><p class="section-sub">Search by name, code, or keyword — try: "CBC", "HIV", "PSA", "Hospital bed", "Foley", "Autoclave", "Wheelchair"</p><div class="search-tabs"><button class="tab-btn active" data-tab="labtests">🧪 Lab Tests (100+)</button><button class="tab-btn" data-tab="consumables">🩺 Medical Consumables</button><button class="tab-btn" data-tab="equipment">🔬 Diagnostic Equipment</button><button class="tab-btn" data-tab="rapidtests">⚡ Rapid Test Kits</button><button class="tab-btn" data-tab="furniture">🛏️ Hospital Furniture & Orthopedics</button></div><div class="search-bar"><input type="text" id="searchInput" placeholder="🔍 Search by name, code, or keyword"></div><div class="price-table-wrapper"><table id="priceTable"><thead><tr><th>Product / Item</th><th>Specification / Pack</th><th>Price (KES)</th><th>Info</th></tr></thead><tbody id="tableBody"><tr><td colspan="4">Loading complete product catalog...</td></tr></tbody></table></div><p class="section-sub" style="margin-top:20px; font-size:0.8rem"><i class="fas fa-info-circle"></i> Prices subject to change. Call 0720 032656 for bulk orders, hospital furniture quotes & special discounts. Email: felmiclaboratories@outlook.com</p></div></section>
+
+<div class="container" id="contacts"><h2 class="section-title" style="margin-bottom:20px;">📞 Get in Touch</h2><div class="contact-strip"><div class="contact-card"><i class="fas fa-phone-alt"></i><h4>Sales & General Inquiries</h4><div class="contact-detail">📱 0720 032656</div><div class="contact-note">Also reachable via: 0731 920718</div><a href="tel:+254720032656" style="display:inline-block; margin-top:12px; background:#0b3b5f; color:white; padding:6px 15px; border-radius:40px; text-decoration:none;">Call Now</a></div><div class="contact-card"><i class="fas fa-microscope"></i><h4>Lab Manager & Results</h4><div class="contact-detail">📱 0721 431744</div><div class="contact-note">Test results, clinical support, referrals</div><a href="tel:+254721431744" style="display:inline-block; margin-top:12px; background:#0b3b5f; color:white; padding:6px 15px; border-radius:40px; text-decoration:none;">Call Lab Support</a></div><div class="contact-card"><i class="fas fa-envelope"></i><h4>Official Email</h4><div class="contact-detail">felmiclaboratories@outlook.com</div><div class="contact-note">Send inquiries, reports & partnership requests</div><a href="mailto:felmiclaboratories@outlook.com" style="display:inline-block; margin-top:12px; background:#1e6f5c; color:white; padding:6px 15px; border-radius:40px; text-decoration:none;">Email Us</a></div></div><div class="hours"><i class="fas fa-clock"></i> <strong>Opening Hours:</strong> Mon–Fri: 7:30 AM – 6:00 PM | Saturday: 8:00 AM – 2:00 PM | Sunday: Emergency only (Call Lab Manager)</div><div class="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.849253142502!2d36.814164114754!3d-1.286067935998001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d043f6b2c1%3A0xb5024b1e2a2f5c!2sUpperhill%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1680000000000!5m2!1sen!2ske" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div><div style="background:#eef3fc; border-radius:28px; padding:20px; text-align:center; margin-bottom:20px;"><i class="fas fa-map-marker-alt"></i> <strong>Locations:</strong> Upperhill | Thika | Kileleshwa</div></div>
+
+<footer class="footer"><div class="container footer-grid"><div><h4>FELMIC LABORATORY</h4><p>Est. 2022 | Premier healthcare solutions<br>Empowering facilities with advanced diagnostics, equipment & furniture.</p><div style="margin-top:12px;"><span style="background:rgba(255,255,255,0.1); padding:5px 12px; border-radius:40px;"><i class="fas fa-microchip"></i> powered by llara Health</span></div></div><div><h4>Quick links</h4><p><a href="#services" style="color:#bedcf5;">Services</a><br><a href="#pricelist" style="color:#bedcf5;">Full Catalog</a><br><a href="#contacts" style="color:#bedcf5;">Contact</a></p></div><div><h4>Partners</h4><p>ABM Hospital · llara Health<br>Thika Dialysis · Vision Klik</p></div></div><div class="container copyright">© 2026 Felmic Laboratories — powered by llara Health. Complete price list updated March 2026. Call to confirm availability.</div></footer>
+
+<div class="floating-buttons"><a href="https://wa.me/254720032656" target="_blank" class="float-btn whatsapp"><i class="fab fa-whatsapp" style="color:white; font-size:28px;"></i></a><a href="tel:+254720032656" class="float-btn call"><i class="fas fa-phone-alt" style="color:white; font-size:24px;"></i></a></div>
+
+<script>
+// ==================== COMPLETE LAB TESTS (100+ from PDF) ====================
+const labTests = [
+    { name: "Rapid test malaria (Pan Ag)", code: "RT 1", spec: "W.Blood", price: 300, info: "30 min" },
+    { name: "Malaria blood smear", code: "RT 2", spec: "W.Blood", price: 200, info: "30 min" },
+    { name: "Hepatitis B (surface Ag)", code: "RT 3", spec: "Serum/plasma", price: 700, info: "30 min" },
+    { name: "Hepatitis C", code: "RT 4", spec: "Serum/plasma", price: 800, info: "30 min" },
+    { name: "Rapid HIV TEST", code: "RT 5", spec: "W.blood/Plasma", price: 300, info: "30 min" },
+    { name: "First response HIV confirmation", code: "RT 6", spec: "W.blood/Plasma", price: 480, info: "30 min" },
+    { name: "Rapid test H pylori (Ag)", code: "RT 7", spec: "Stool", price: 720, info: "30 min" },
+    { name: "Rapid test Salmonella (Ag)", code: "RT 8", spec: "Stool", price: 600, info: "30 min" },
+    { name: "Rapid test Dengue", code: "RT 9", spec: "Serum/plasma", price: 1200, info: "30 min" },
+    { name: "Chlamydia test", code: "RT 10", spec: "Vaginal swab", price: 1080, info: "30 min" },
+    { name: "Gonorrhea test", code: "RT 11", spec: "Vaginal swab", price: 1080, info: "30 min" },
+    { name: "Rapid test bHCG", code: "RT 12", spec: "Urine", price: 180, info: "30 min" },
+    { name: "Rota/Adeno Virus", code: "RT 13", spec: "Stool", price: 540, info: "30 min" },
+    { name: "Rapid test Syphilis VDRL", code: "RT 14", spec: "Blood", price: 300, info: "30 min" },
+    { name: "ABO blood grouping", code: "RT 15", spec: "W.Blood", price: 240, info: "30 min" },
+    { name: "Complete Blood Count /TBC/FHG", code: "CBC", spec: "W.Blood", price: 700, info: "45 min" },
+    { name: "tPSA", code: "IL 01", spec: "Serum", price: 2000, info: "2 HRS" },
+    { name: "CEA", code: "IL 02", spec: "Serum", price: 1800, info: "2 HRS" },
+    { name: "Cytopack (Pap Smear)", code: "IL 03", spec: "Swab", price: 1500, info: "3 DAYS" },
+    { name: "AFP", code: "IL 04", spec: "Serum", price: 1750, info: "2 HRS" },
+    { name: "CA 125", code: "IL 05", spec: "Serum", price: 2500, info: "4 HRS" },
+    { name: "CA 199", code: "IL 06", spec: "Serum", price: 2500, info: "4 HRS" },
+    { name: "CA 15-3", code: "IL 07", spec: "Serum", price: 2500, info: "4 HRS" },
+    { name: "LH", code: "IL 08", spec: "Serum", price: 1750, info: "2 HRS" },
+    { name: "FSH", code: "IL 09", spec: "Serum", price: 1750, info: "2 HRS" },
+    { name: "TSH", code: "IL 10", spec: "Serum", price: 1300, info: "2 HRS" },
+    { name: "fT4", code: "IL 11", spec: "Serum", price: 1300, info: "2 HRS" },
+    { name: "fT3", code: "IL 12", spec: "Serum", price: 1300, info: "2 HRS" },
+    { name: "Thyroid Function Test", code: "IL 13", spec: "Serum/Plasma", price: 3600, info: "2 HRS" },
+    { name: "Vitamin D", code: "IL 14", spec: "Serum", price: 3000, info: "2 HRS" },
+    { name: "Testosterone", code: "IL 15", spec: "Serum/Plasma", price: 2400, info: "2 HRS" },
+    { name: "Progesterone", code: "IL 16", spec: "Serum/Plasma", price: 1900, info: "2 HRS" },
+    { name: "Estradiol (E2)", code: "IL 17", spec: "Serum/Plasma", price: 2000, info: "2 HRS" },
+    { name: "Prolactin", code: "IL 18", spec: "Serum", price: 1800, info: "2 HRS" },
+    { name: "PTH", code: "IL 19", spec: "Serum", price: 3800, info: "2 HRS" },
+    { name: "CORTISOL", code: "IL 20", spec: "Serum", price: 2500, info: "2 HRS" },
+    { name: "Insulin (fasting)", code: "IL 21", spec: "Serum", price: 2800, info: "2 HRS" },
+    { name: "AMH", code: "IL 22", spec: "Serum", price: 5500, info: "1 DAY" },
+    { name: "CK-MB", code: "IL 23", spec: "Serum", price: 3500, info: "4 HRS" },
+    { name: "CRP/PCT", code: "IL 24", spec: "Serum", price: 5500, info: "1 DAY" },
+    { name: "NT pro BNP", code: "IL 26", spec: "Serum", price: 5500, info: "1 DAY" },
+    { name: "BhCG (Quantitative)", code: "IL 30", spec: "Blood", price: 1800, info: "2 HRS" },
+    { name: "BONE PROFILE", code: "IL 31", spec: "Serum", price: 12000, info: "1 DAY" },
+    { name: "TIBC", code: "IL 32", spec: "Serum", price: 2250, info: "8 HRS" },
+    { name: "Troponine", code: "IL 36", spec: "Serum", price: 3600, info: "4 HRS" },
+    { name: "D-Dimer", code: "IL 38", spec: "Blood/Citrate", price: 2000, info: "2 HRS" },
+    { name: "Uric acid", code: "IL 39", spec: "Blood", price: 550, info: "1 HR" },
+    { name: "BUN", code: "IL 40", spec: "Serum", price: 550, info: "1 HR" },
+    { name: "Creatinine", code: "IL 50", spec: "Serum", price: 550, info: "1 HR" },
+    { name: "Liver Profile", code: "IL 54", spec: "Serum/Plasma", price: 1950, info: "2 HRS" },
+    { name: "UECs", code: "IL 56", spec: "Serum/Plasma", price: 1900, info: "1 HR" },
+    { name: "HbA1c", code: "IL 59", spec: "W.blood", price: 2000, info: "1 HR" },
+    { name: "Lipid Profile", code: "IL 60", spec: "Serum", price: 2000, info: "2 HRS" },
+    { name: "HIV ELISA", code: "IL 61", spec: "Serum", price: 2000, info: "4 HRS" },
+    { name: "Vitamin B12", code: "IL 64", spec: "Serum", price: 2500, info: "3 HRS" },
+    { name: "Ferritin", code: "IL 65", spec: "Serum", price: 2500, info: "3 HRS" },
+    { name: "Urine Culture & Sensitivity", code: "IL 77", spec: "Urine", price: 2100, info: "3-5 DAYS" },
+    { name: "Blood Culture", code: "IL 80", spec: "Blood Bottle", price: 3000, info: "5 DAYS" },
+    { name: "CD4/CD8", code: "IL 89", spec: "EDTA Tube", price: 3000, info: "2 DAYS" },
+    { name: "HIV VIRAL LOAD", code: "IL 90", spec: "Frozen Plasma", price: 6500, info: "5 DAYS" },
+    { name: "SARS-CoV-2 PCR", code: "IL 76", spec: "Swab", price: 6000, info: "24 HRS" },
+    { name: "Tissue biopsy (Small)", code: "IL 95", spec: "Tissue", price: 3200, info: "5 days" },
+    { name: "CSF Routine", code: "IL 106", spec: "C.S.F", price: 6200, info: "1 Day" }
+];
+
+// ==================== MEDICAL CONSUMABLES ====================
+const consumables = [
+    { name: "BRANULAR G16 - GREY", spec: "100's", price: 3120, info: "In stock" },
+    { name: "BRANULARS G18 - GREEN", spec: "100's", price: 2470, info: "In stock" },
+    { name: "BRANULARS G20 - PINK", spec: "100's", price: 2405, info: "In stock" },
+    { name: "BRANULARS G22 - BLUE", spec: "100's", price: 2340, info: "In stock" },
+    { name: "BRANULARS G24 - YELLOW", spec: "100's", price: 2340, info: "In stock" },
+    { name: "BRANULARS G26 - PURPLE", spec: "100's", price: 24050, info: "In stock" },
+    { name: "CIDEX SOLUTION 5 LTS", spec: "BOTTLE", price: 2665, info: "In stock" },
+    { name: "FOLEY CATHETER 2WAY FR 18", spec: "10's", price: 6370, info: "Silicone" },
+    { name: "FOLEY CATHETER 2WAY FR 16", spec: "10's", price: 6370, info: "Silicone" },
+    { name: "FOLEY CATHETER 2WAY FR 14", spec: "10's", price: 6370, info: "Silicone" },
+    { name: "FORMALINE 37% 5LTRS", spec: "BOTTLE", price: 3250, info: "In stock" },
+    { name: "GAUZE ROLL 4PLY PLAIN", spec: "1.5 KG", price: 2535, info: "In stock" },
+    { name: "GYNAECOLOGICAL GLOVES 7.5", spec: "25's", price: 4940, info: "In stock" },
+    { name: "P.O.P GYPSON 4\"", spec: "DOZ", price: 2990, info: "In stock" },
+    { name: "HARTMAN'S SOLUTION 500ML", spec: "30's", price: 260, info: "In stock" },
+    { name: "HAND SANITIZER 500ML", spec: "BOTTLE", price: 715, info: "In stock" },
+    { name: "I.V. GIVING SET WITH AIR VENT", spec: "25's", price: 59, info: "In stock" },
+    { name: "IDENTITY BAND ADULT", spec: "100's", price: 1365, info: "Blue" },
+    { name: "MATERNITY PADS", spec: "48's", price: 195, info: "In stock" },
+    { name: "METHYLATED SPIRIT 5L", spec: "BOTTLE", price: 2015, info: "In stock" },
+    { name: "NORMAL SALINE 500ML", spec: "30's", price: 715, info: "In stock" },
+    { name: "OXYGEN NASAL CANNULA", spec: "10's", price: 130, info: "Adult/Child" },
+    { name: "OXYGEN MASK ADULT", spec: "PCS", price: 130, info: "In stock" },
+    { name: "PLASTIC GLOVES LARGE", spec: "100's", price: 325, info: "In stock" },
+    { name: "POVIDONE IODINE 10%", spec: "500ML", price: 975, info: "In stock" },
+    { name: "SAFETY BOX 5L", spec: "50's", price: 273, info: "In stock" },
+    { name: "SCALP VEIN G 21", spec: "100's", price: 975, info: "In stock" },
+    { name: "STERILE SURGICAL BLADE G15", spec: "100's", price: 754, info: "In stock" },
+    { name: "STERILE SURGICAL GLOVES 7.5", spec: "50's", price: 2275, info: "In stock" },
+    { name: "SUCTION CATHETER FR14", spec: "PCS", price: 59, info: "In stock" },
+    { name: "SURGICAL SPIRIT 70% 5L", spec: "BOTTLE", price: 2600, info: "In stock" },
+    { name: "1ML SYRINGE 29G", spec: "100's", price: 1365, info: "Unibody" },
+    { name: "5ML SYRINGE WITH NEEDLE", spec: "100's", price: 1235, info: "In stock" },
+    { name: "10ML SYRINGE WITH NEEDLE", spec: "100's", price: 1365, info: "In stock" },
+    { name: "TONGUE DEPRESSORS", spec: "100's", price: 416, info: "In stock" },
+    { name: "URINE BAGS 2000ML", spec: "10's", price: 156, info: "In stock" },
+    { name: "NYLON SUTURES 1 RB", spec: "DOZ", price: 650, info: "Surgical" },
+    { name: "POLYGLACTIN SUTURES 1 RB", spec: "DOZ", price: 1560, info: "Surgical" },
+    { name: "SILK SUTURES 1 RB", spec: "DOZ", price: 585, info: "Surgical" }
+];
+
+// ==================== DIAGNOSTIC EQUIPMENT ====================
+const equipment = [
+    { name: "Aneroid Blood Pressure Monitor", spec: "unit", price: 2015, info: "In stock" },
+    { name: "Autoclave 18L", spec: "unit", price: 27950, info: "Portable" },
+    { name: "Autoclave 24L", spec: "unit", price: 37700, info: "Portable" },
+    { name: "Autoclave 50L", spec: "unit", price: 260000, info: "Heavy duty" },
+    { name: "Compressor Nebulizer", spec: "unit", price: 4680, info: "In stock" },
+    { name: "Digital baby scale", spec: "unit", price: 15600, info: "In stock" },
+    { name: "Digital Bathroom Scale", spec: "0-200Kgs", price: 4550, info: "In stock" },
+    { name: "Digital thermometer", spec: "unit", price: 715, info: "In stock" },
+    { name: "Fully Automatic BP Monitor", spec: "unit", price: 9100, info: "In stock" },
+    { name: "Mission plus HB machine", spec: "unit", price: 20800, info: "In stock" },
+    { name: "Glucometer + 50 strips", spec: "kit", price: 5850, info: "On call plus" },
+    { name: "Pulse oximeter Finger tip", spec: "unit", price: 4940, info: "In stock" },
+    { name: "Vein Finders", spec: "unit", price: 16900, info: "In stock" },
+    { name: "Laryngoscopes", spec: "set", price: 13650, info: "In stock" },
+    { name: "Centrifuge 6 tubes", spec: "Round", price: 13650, info: "In stock" },
+    { name: "Centrifuge 12 tubes", spec: "Digital", price: 32500, info: "In stock" },
+    { name: "CX 107 MICROSCOPE", spec: "unit", price: 37050, info: "In stock" },
+    { name: "BIOELAB EC 30 Hematology Analyzer", spec: "unit", price: 520000, info: "Call for quote" },
+    { name: "SEAMATY SD1 BIOCHEMISTRY MACHINE", spec: "unit", price: 552500, info: "Call for quote" }
+];
+
+// ==================== RAPID TEST KITS ====================
+const rapidTests = [
+    { name: "Hepatitis C (Accurate Brand)", spec: "40 tests", price: 4290, info: "30 min" },
+    { name: "H. Pylori Antibody", spec: "50 tests", price: 4810, info: "30 min" },
+    { name: "Salmonella Typhi Antigen", spec: "25 tests", price: 4940, info: "30 min" },
+    { name: "Urinalysis", spec: "kit", price: 3250, info: "Multi-parameter" },
+    { name: "HCG Pregnancy Test", spec: "kit", price: 2730, info: "Rapid" },
+    { name: "Malaria Rapid Test", spec: "40 tests", price: 2730, info: "HRP2/pLDH" },
+    { name: "Drug of Abuse", spec: "20 tests", price: 15600, info: "Multi-panel" }
+];
+
+// ==================== HOSPITAL FURNITURE & ORTHOPEDICS ====================
+const furniture = [
+    { name: "DOUBLE CRANK HOSPITAL BED", spec: "unit", price: 37700, info: "Manual" },
+    { name: "SINGLE CRANK HOSPITAL BED", spec: "unit", price: 30550, info: "Manual" },
+    { name: "Hospital bed - 2 crank", spec: "unit", price: 45500, info: "Heavy duty" },
+    { name: "Delivery beds", spec: "unit", price: 52000, info: "Maternity" },
+    { name: "Emergency trolley", spec: "unit", price: 130000, info: "Stainless steel" },
+    { name: "Examination Bed", spec: "unit", price: 32500, info: "Adjustable" },
+    { name: "Ambulance loading stretcher", spec: "unit", price: 110500, info: "Heavy duty" },
+    { name: "Theater operating table", spec: "unit", price: 390000, info: "Multipurpose" },
+    { name: "Drip stands", spec: "unit", price: 6240, info: "Stainless steel" },
+    { name: "Patient monitor 12\"", spec: "unit", price: 195000, info: "Multiparameter" },
+    { name: "Walking stick", spec: "pair", price: 1950, info: "Adjustable" },
+    { name: "Cellular Palsy wheelchair", spec: "unit", price: 57200, info: "Special needs" },
+    { name: "Electric wheelchair", spec: "unit", price: 169000, info: "Rechargeable" },
+    { name: "Walking frames", spec: "unit", price: 8450, info: "Foldable" },
+    { name: "Hinged Knee brace", spec: "unit", price: 7800, info: "Orthopedic support" }
+];
+
+let currentTab = "labtests";
+function getData() {
+    if (currentTab === "labtests") return labTests;
+    if (currentTab === "consumables") return consumables;
+    if (currentTab === "equipment") return equipment;
+    if (currentTab === "rapidtests") return rapidTests;
+    return furniture;
+}
+function renderTable(search = "") {
+    let data = getData();
+    if (search.trim()) { const term = search.toLowerCase(); data = data.filter(i => i.name.toLowerCase().includes(term) || (i.code && i.code.toLowerCase().includes(term))); }
+    const tbody = document.getElementById("tableBody");
+    if (!data.length) { tbody.innerHTML = '<tr><td colspan="4" class="no-results">🔍 No items found. Try "CBC", "malaria", "hospital bed", "Foley", "wheelchair", "glucometer"</td></tr>'; return; }
+    let html = "";
+    data.forEach(item => { html += `<tr><td style="font-weight:500;">${escapeHtml(item.name)}${item.code ? ` <span style="font-size:0.7rem; color:#6f8eaa;">(${item.code})</span>` : ''}</td><td>${escapeHtml(item.spec || '—')}</td><td class="price">KES ${item.price.toLocaleString('en-KE')}</td><td class="tat">${item.info || 'Call for details'}</td></tr>`; });
+    tbody.innerHTML = html;
+}
+function escapeHtml(s) { return String(s).replace(/[&<>]/g, function(m){ if(m==='&') return '&amp;'; if(m==='<') return '&lt;'; if(m==='>') return '&gt;'; return m;}); }
+document.querySelectorAll(".tab-btn").forEach(btn => { btn.addEventListener("click", () => { document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active")); btn.classList.add("active"); currentTab = btn.dataset.tab; renderTable(document.getElementById("searchInput").value); }); });
+document.getElementById("searchInput").addEventListener("input", e => renderTable(e.target.value));
+renderTable("");
+</script>
+</body>
+</html>
